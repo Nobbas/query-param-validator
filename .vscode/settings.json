@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "html.format.enable": false,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "prettier.eslintIntegration": true,
+  "prettier.tslintIntegration": true,
+  "editor.wordWrap": "on",
+  "html.format.wrapLineLength": 0,
+  "prettier.printWidth": 80,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "search.exclude": {
+    "**/dist": true
+  }
+}

@@ -1,6 +1,6 @@
 {
-  "name": "@nobbas/query-param-validator",
-  "version": "0.0.1",
+  "name": "query-param-validator",
+  "version": "0.0.2",
   "description": "Helper to validate query params",
   "main": "dist/index.js",
   "files": [

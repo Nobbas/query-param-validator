@@ -11,11 +11,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10
+          registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}
+          NODE_AUTH_TOKEN: ${{ secrets.npm_publish_token }}
 
   publish-github:
     runs-on: ubuntu-latest
@@ -24,8 +25,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 10
+          registry-url: https://npm.pkg.github.com/
+          scope: '@nobbas'
       - run: npm ci
       - run: npm run build
       - run: npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.github_publish_token}}
+          NODE_AUTH_TOKEN: ${{ secrets.github_publish_token }}

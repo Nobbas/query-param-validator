@@ -13,7 +13,7 @@ jobs:
           node-version: 10
       - run: npm ci
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_publish_token}}
 
@@ -26,6 +26,6 @@ jobs:
           node-version: 10
       - run: npm ci
       - run: npm run build
-      - run: npm publish
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.github_publish_token}}

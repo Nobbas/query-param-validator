@@ -1,6 +1,6 @@
 {
   "name": "query-param-validator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper to validate query params",
   "main": "dist/index.js",
   "files": [
